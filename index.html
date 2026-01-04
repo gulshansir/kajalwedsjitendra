@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>शुभ विवाह | काजल  ♥ जितेंद्र </title>
+
+<style>
+body{
+    margin:0;
+    font-family:"Mangal","Noto Serif Devanagari",serif;
+    /* नया BACKGROUND - रंगीन और सुंदर */
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.2) 0%, transparent 20%),
+        radial-gradient(circle at 90% 30%, rgba(255, 105, 180, 0.2) 0%, transparent 25%),
+        radial-gradient(circle at 20% 80%, rgba(135, 206, 235, 0.2) 0%, transparent 20%),
+        radial-gradient(circle at 80% 70%, rgba(144, 238, 144, 0.2) 0%, transparent 22%),
+        repeating-linear-gradient(
+            45deg,
+            #fff5e6 0px,
+            #fff5e6 10px,
+            #ffe8cc 10px,
+            #ffe8cc 20px,
+            #ffdab9 20px,
+            #ffdab9 30px
+        );
+    color:#6b1a12;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* पृष्ठभूमि में तैरते पुष्प */
+.floating-flower {
+    position: fixed;
+    font-size: 30px;
+    opacity: 0.3;
+    z-index: -1;
+    animation: float 15s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) translateX(0) rotate(0deg); }
+    100% { transform: translateY(-100px) translateX(100px) rotate(360deg); }
+}
+
+.wrapper{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Common */
+.section{
+    margin:25px 0;
+    padding:30px 20px;
+    border:5px double #8b1a1a;
+    box-shadow:0 0 15px rgba(0,0,0,0.25);
+    background: linear-gradient(135deg, rgba(255,248,220,0.9), rgba(255,240,245,0.9));
+    backdrop-filter: blur(5px);
+}
+.center{text-align:center;}
+.divider{
+    width:70%;
+    height:3px;
+    background:linear-gradient(to right,#8b1a1a,#d32f2f,#8b1a1a);
+    margin:18px auto;
+}
+
+/* TOP (Image 1 Inspired) */
+.top{
+    background:linear-gradient(135deg,rgba(249,199,106,0.9),rgba(242,169,60,0.9));
+}
+.ganesh{
+    font-size:50px;
+}
+.names{
+    font-size:46px;
+    font-weight:bold;
+}
+.bride{
+    color:#c2185b;
+}
+.groom{
+    color:#1a237e;
+}
+.heart{
+    color:#b71c1c;
+}
+
+/* MIDDLE (Image 2 Inspired) */
+.middle{
+    background:linear-gradient(135deg,rgba(255,209,128,0.9),rgba(255,183,77,0.9));
+}
+.circle{
+    border:4px solid #8b1a1a;
+    border-radius:50%;
+    padding:25px;
+    display:inline-block;
+    min-width:240px;
+    background:rgba(255,255,255,0.5);
+}
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.box{
+    width:48%;
+    text-align:center;
+}
+
+/* BOTTOM (Image 3 Inspired) */
+.bottom{
+    background:linear-gradient(135deg,rgba(255,204,128,0.9),rgba(255,167,38,0.9));
+}
+p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.footer{
+    text-align:center;
+    padding:15px;
+    font-size:16px;
+    background: linear-gradient(135deg, rgba(139,26,26,0.1), rgba(211,47,47,0.1));
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media(max-width:700px){
+    .box{width:100%; margin-bottom:20px;}
+    .names{font-size:34px;}
+}
+
+.flower{
+  position:fixed;
+  top:-10%;
+  font-size:24px;
+  animation:fall linear infinite;
+  z-index:9999;
+}
+@keyframes fall{
+  to{
+    transform:translateY(110vh) rotate(360deg);
+  }
+}
+/* 🌟 Guest Name Gold Glow */
+.guest-glow{
+  margin-top:15px;
+  font-size:24px;
+  font-weight:bold;
+  text-align:center;
+  background: linear-gradient(
+    90deg,
+    #1a0361,
+    #fff1a8,
+    #f5c542,
+    #750101,
+    #d4af37
+  );
+  background-size:300% 300%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation: goldMove 4s linear infinite;
+  text-shadow:
+    0 0 8px rgba(212,175,55,0.6),
+    0 0 15px rgba(212,175,55,0.4);
+}
+
+@keyframes goldMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* Mobile size */
+@media(max-width:700px){
+  .guest-glow{
+    font-size:20px;
+  }
+}
+
+/* DAMPTAYA STYLE */
+.damptaya-section{
+  margin:30px 0;
+  padding:40px 20px;
+  border:5px double #8b1a1a;
+  background:linear-gradient(135deg,rgba(255,209,128,0.9),rgba(255,183,77,0.9));
+  text-align:center;
+}
+
+.section-title{
+  font-size:32px;
+  color:#7b1d12;
+  margin-bottom:30px;
+}
+
+.damptaya-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.person{
+  width:40%;
+  background:rgba(255,255,255,0.5);
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 0 12px rgba(0,0,0,0.2);
+}
+
+.center-symbol{
+  font-size:40px;
+  color:#8b1a1a;
+}
+
+.person p{
+  font-size:18px;
+  line-height:1.7;
+  color:#5c1a12;
+}
+
+/* GRADIENT NAME ANIMATION */
+.gradient-name{
+  font-size:32px;
+  font-weight:bold;
+  background-size:300% 300%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:gradientMove 4s ease infinite;
+}
+
+.bride-name{
+  background-image:linear-gradient(
+    45deg,
+    #c2185b,
+    #ff4081,
+    #f50057
+  );
+}
+
+.groom-name{
+  background-image:linear-gradient(
+    45deg,
+    #1a237e,
+    #3949ab,
+    #0d47a1
+  );
+}
+
+@keyframes gradientMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.bottom-text{
+  margin-top:30px;
+  font-size:18px;
+  font-style:italic;
+  color:#6b1a12;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .person{
+    width:100%;
+    margin-bottom:20px;
+  }
+  .center-symbol{
+    margin:15px 0;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- तैरते फूलों के लिए -->
+<div id="floating-flowers"></div>
+
+<div class="wrapper">
+
+<!-- ========== TOP SECTION (CARD IMAGE 1) ========== -->
+<div class="section top center">
+    <div class="ganesh">🕉️</div>
+    <h3>॥ श्री गणेशाय नमः ॥</h3>
+    <div class="divider"></div>
+<p align="left" style="margin-left: 200px; font-size:25px">श्रीमान 🙏</p>
+<h3 id="guestName" class="guest-glow">
+🙏गुलशन कुमार  🙏
+</h3>
+
+
+    <div class="divider"></div>
+
+    <h1><b>शुभ विवाह </b></h1>
+
+    <div class="names">
+        <marquee behavior="alternate" width="55%"><span class="bride">काजल मौर्या </span>
+        <span class="heart"> ♥ </span>
+        <span class="groom">जितेंद्र मौर्या </span></marquee>
+    </div>
+
+    <h3>12 फरवरी  2026 • गुरुवार</h3>
+
+    <p style="margin-top:20px;">
+      – प्रेषक – <br/>
+        <b>श्री रामजतन मौर्या <br/>
+          श्री रामलखन मौर्या <br/>
+          श्री रविंद्रनाथ मौर्या </b><br/>
+          प्लॉट न. 235, उमिया नगर-1, सब्जी मार्केट के पास , बमरोली रोड , पांडेसरा, सूरत-394221 <br/>
+        📞 9998848061, 9935483912
+    </p>
+</div>
+
+<!-- ========== MIDDLE SECTION (CARD IMAGE 2) ========== -->
+<div class="section middle center">
+  <h3>॥ श्री गणेशाय नमः ॥</h3>
+  <div style="color:#e17055; font-size:20px;font-weight:bold; margin-bottom:10px;">
+    वक्रतुण्ड महाकाय , सूर्यकोटि समप्रभ: ।
+</div>
+
+<div style="color:#e17055; font-size:20px;font-weight:bold; margin-bottom:10px;">
+    निर्विघ्नं कुरु मे देव ,  सर्वकार्येषु सर्वदा ॥
+</div> 
+  <h2>|| मांगलिक कार्यक्रम ||</h2>
+
+    <div class="divider"></div>
+
+    <div class="flex">
+        <div class="box">
+            <div class="circle">
+                <h2><u>शुभ विवाह</u></h2>
+                <p>12 फरवरी 2026<br/>गुरुवार</p><img src="https://img.pikbest.com/png-images/20250326/charming-cartoon-style-indian-wedding-ritual-with-bride-and-groom_11622063.png!w700wp" style="margin:0 auto 10px auto; width:35%; max-width:600px;"/>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="circle">
+                <h2><u>प्रातः विदाई</u></h2>
+                <p>13 फरवरी 2026<br/>शुक्रवार</p><img src="https://www.pngplay.com/wp-content/uploads/9/Marriage-PNG-HD-Quality.png" style="margin:0 auto 10px auto; width:50%; max-width:600px;"/>
+            </div>
+        </div>
+    </div><br/>
+    <div style="color:#e17055; font-size:20px; font-weight:bold; margin:0 auto 10px auto; width:90%; max-width:600px; border:1px solid #e17055; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.2); padding:15px; background-color:#none;">
+      <h2 style="color:#6e1600; font-size:20px; font-weight:bold;">|| विवाह स्थल ||</h2>
+      विश्वकर्मा वाडी, रायका सर्कल के पास, बमरोली रोड, आशापुरी, उधना , सूरत -394221 
+    </div>
+    <p style="margin-top:25px;font-style:italic;">
+        हल्दी है चन्दन है, रिश्तों का बंधन है,
+        मेरे दीदी की शादी में आपका अभिनन्दन है।.......आर्या 
+    </p>
+</div>
+
+<!-- ========== BOTTOM SECTION (CARD IMAGE 3) ========== -->
+<div class="section bottom">
+    <div class="center">
+        
+<!-- ======= DAMPTAYA SECTION ======= -->
+<section class="damptaya-section">
+  <div class="section middle center">
+    <h3>॥ श्री गणेशाय नमः ॥</h3>
+    <div style="color:#e17055; font-size:20px;font-weight:bold; margin-bottom:10px;">
+      मङ्गलम् भगवान विष्णुः, मङ्गलम् गरुणध्वजः।
+  </div>
+  
+  <div style="color:#e17055; font-size:20px;font-weight:bold; margin-bottom:10px;">
+    मङ्गलम् पुण्डरी काक्षः, मङ्गलाय तनो हरिः॥
+  </div> 
+  <div align="left">परम स्नेही मान्यवर श्री ,<br/>
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; परम कृपालु परमात्मा को असीम अनुकम्पा से हमारे सुपुत्री<br/><br/><br/></div>
+</div>
+
+  <div class="damptaya-container">
+
+    <!-- Bride -->
+    <div class="person bride">
+      <h3 class="gradient-name bride-name">आयु0  कु0  काजल मौर्या </h3>
+      <p align="left">
+        सुपौत्री - श्री रामलखन मौर्या <br/>
+        सुपुत्री – श्री रविंद्र नाथ मौर्या <br/>
+        एवं श्रीमती दुर्गावती देवी <br/>
+        ग्राम- नहोरा, पो. - नहोरा,<br/>
+थाना- जलालपुर,<br/>
+जिला - जौनपुर , उ. प्र. 
+      </p>
+    </div>
+
+    <!-- Center Symbol -->
+    <div class="center-symbol">संग <br/>💍</div>
+
+    <!-- Groom -->
+    <div class="person groom">
+      <h3 class="gradient-name groom-name">चि0 जीतेन्द्र मौर्या </h3>
+      <p align="left">
+        सुपुत्र - श्री अमरनाथ हीरालाल मौर्या <br/>
+ग्राम - सराई गूंजा<br/>   पो.- शाहपुर <br/>
+त.- बदलापुर, जिला - जौनपुर, उ. प्र.<br/><br/><br/>
+      </p>
+    </div>
+
+  </div>
+<h2 class="section-title">दाम्पत्य-सूत्र-बन्धन</h2>
+<div class="divider"></div>
+  <p class="bottom-text">
+    की सुमधूर मांगलिक बेला पर पधार कर नव-दम्पत्ति को शुभ आर्शीवाद<br/> प्रदान कर हमें अनुगृहित करें।
+  </p>
+</section>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <h3 class="center">दर्शनाभिलाषी</h3>
+    <p class="center">
+      अमरनाथ, राजनाथ, लालमणि, चंद्रमणि,<br/>
+      जितेन्द्रनाथ, सत्येन्द्रनाथ, कल्पनाथ, दिनानाथ,<br/>
+      राजन, अजय, अजित, योगेन्द्र कुमार, <br/>
+      गुलशन कुमार, सूरज कुमार, शिवम कुमार,<br/>
+       कुलदीप, अनमोल, आर्यन, अथर्व <br/>
+       एवं समस्त मौर्य परिवार व मित्रगण 
+    </p>
+
+    <div class="divider"></div>
+
+    <h3 class="center">विनीत</h3>
+    <p class="center">
+      <b>श्री रामजतन मौर्या <br/>
+        श्री रामलखन मौर्या <br/>
+        श्री रविंद्रनाथ मौर्या </b><br/>
+        प्लॉट न. 235, उमिया नगर-1, सब्जी मार्केट के पास , बमरोली रोड , पांडेसरा, सूरत-394221 <br/>
+        📞 9998848061, 9935483912
+    </p>
+</div>
+
+<div class="footer">
+    🙏 आपकी गरिमामयी उपस्थिति हमारे लिए सौभाग्य का विषय होगी 🙏
+</div>
+
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    console.log("Premium Wedding Card Website Loaded");
+    
+    // तैरते फूलों का निर्माण
+    function createFloatingFlowers() {
+        const flowers = ["🌸", "🌺", "🌼", "💐", "🌹", "🌷"];
+        const container = document.getElementById('floating-flowers');
+        
+        for (let i = 0; i < 15; i++) {
+            const flower = document.createElement('div');
+            flower.className = 'floating-flower';
+            flower.innerHTML = flowers[Math.floor(Math.random() * flowers.length)];
+            flower.style.left = Math.random() * 100 + 'vw';
+            flower.style.fontSize = (20 + Math.random() * 20) + 'px';
+            flower.style.animationDuration = (10 + Math.random() * 20) + 's';
+            flower.style.animationDelay = Math.random() * 5 + 's';
+            container.appendChild(flower);
+        }
+    }
+    
+    const flowers = ["🌸","🌺","🌼","💐"];
+    setInterval(function(){
+      const flower=document.createElement("div");
+      flower.className="flower";
+      flower.innerHTML=flowers[Math.floor(Math.random()*flowers.length)];
+      flower.style.left=Math.random()*100+"vw";
+      flower.style.animationDuration=(5+Math.random()*5)+"s";
+      document.body.appendChild(flower);
+      setTimeout(function(){ flower.remove(); },10000);
+    },500);
+    
+    function getGuestName(){
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("name");
+    
+      if(name){
+        document.getElementById("guestName").innerHTML =
+          "🙏 " + decodeURIComponent(name) + " 🙏";
+      }
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        createFloatingFlowers();
+        getGuestName();
+    });
+    //]]>
+    </script>
+    
+
+</body>
+</html>
