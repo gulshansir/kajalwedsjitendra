@@ -5,7 +5,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=1200"/>
 <title>शुभ विवाह | काजल  ♥ जितेंद्र </title>
-
+<link rel="icon" type="image/png" href="https://cdn-icons-png.freepik.com/512/15675/15675803.png">
+<link rel="apple-touch-icon" href="https://cdn-icons-png.freepik.com/512/15675/15675803.png">
 <style>
 body{
     margin:0;
@@ -148,7 +149,7 @@ p{
 /* 🌟 Guest Name Gold Glow */
 .guest-glow{
   margin-top:15px;
-  font-size:24px;
+  font-size:40px;
   font-weight:bold;
   text-align:center;
   background: linear-gradient(
@@ -273,6 +274,24 @@ p{
     margin:15px 0;
   }
 }
+/* ⏳ Countdown Timer */
+.countdown-box{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:15px;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.countdown-box div{
+  background:rgba(255,255,255,0.6);
+  padding:12px 18px;
+  border-radius:15px;
+  min-width:80px;
+  text-align:center;
+  box-shadow:0 0 10px rgba(0,0,0,0.25);
+}
 
 </style>
 </head>
@@ -289,10 +308,16 @@ p{
     <div class="ganesh">🕉️</div>
     <h3>॥ श्री गणेशाय नमः ॥</h3>
     <div class="divider"></div>
+    <h2 class="center" style="margin-top:20px;color:#7b1d12;">
+ शुभ विवाह में शेष समय ⏳
+</h2>
+
+<div id="countdown" class="countdown-box"></div>
+
 <p align="left" style="margin-left: 100px; font-size:40px">श्रीमान 🙏</p>
-<h3 id="guestName" class="guest-glow">
+<h2 id="guestName" class="guest-glow">
 🙏गुलशन कुमार  🙏
-</h3>
+</h2>
 
 
     <div class="divider"></div>
@@ -350,6 +375,23 @@ p{
       <h2 style="color:#6e1600; font-size:20px; font-weight:bold;">|| विवाह स्थल ||</h2>
       विश्वकर्मा वाडी, रायका सर्कल के पास, बमरोली रोड, आशापुरी, उधना , सूरत -394221 
     </div>
+        <!-- 📍 Google Map Button -->
+<div class="center" style="margin-top:15px;">
+  <a href="https://maps.app.goo.gl/XF4usU83586R6Dbo6"
+     target="_blank"
+     style="
+       display:inline-block;
+       padding:12px 24px;
+       background:linear-gradient(45deg,#b96a02,#ffb35c);
+       color:white;
+       border-radius:30px;
+       text-decoration:none;
+       font-size:16px;
+       box-shadow:0 0 10px rgba(0,0,0,0.3);
+     ">
+     📍 विवाह स्थल का स्थान देखें
+  </a>
+</div>
     <p style="margin-top:25px;font-style:italic;">
         हल्दी है चन्दन है, रिश्तों का बंधन है,
         मेरे दीदी की शादी में आपका अभिनन्दन है।.......नित्या, आर्या 
@@ -482,7 +524,7 @@ p{
     
       if(name){
         document.getElementById("guestName").innerHTML =
-          "🙏 " + decodeURIComponent(name) + " 🙏";
+          "🙏 " + decodeURIComponent(name) + " 🙏 जी";
       }
     }
     
@@ -491,9 +533,33 @@ p{
         getGuestName();
     });
     //]]>
+    const weddingDate = new Date("May 28, 2025 00:00:00").getTime();
+
+setInterval(function(){
+  const now = new Date().getTime();
+  const distance = weddingDate - now;
+
+  if(distance < 0){
+    document.getElementById("countdown").innerHTML =
+      "<div>आज शुभ विवाह है 🎉</div>";
+    return;
+  }
+
+  const days = Math.floor(distance / (1000*60*60*24));
+  const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+  const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+  const seconds = Math.floor((distance % (1000*60)) / 1000);
+
+  document.getElementById("countdown").innerHTML =
+    `<div>${days}<br>दिन</div>
+     <div>${hours}<br>घंटे</div>
+     <div>${minutes}<br>मिनट</div>
+     <div>${seconds}<br>सेकंड</div>`;
+}, 1000);
     </script>
     
 
 </body>
 
 </html>
+
